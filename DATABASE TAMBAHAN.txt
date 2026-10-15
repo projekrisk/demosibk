@@ -1,0 +1,16 @@
+ALTER TABLE student_assessments 
+ADD COLUMN score_r INT DEFAULT 0 AFTER percentage_karir,
+ADD COLUMN score_i INT DEFAULT 0 AFTER score_r,
+ADD COLUMN score_a INT DEFAULT 0 AFTER score_i,
+ADD COLUMN score_s INT DEFAULT 0 AFTER score_a,
+ADD COLUMN score_e INT DEFAULT 0 AFTER score_s,
+ADD COLUMN score_c INT DEFAULT 0 AFTER score_e;
+
+
+
+kedua
+ALTER TABLE assessment_packages ADD COLUMN target_classrooms JSON NULL AFTER is_active;
+
+
+token
+ALTER TABLE students ADD COLUMN remember_token VARCHAR(100) NULL AFTER password;

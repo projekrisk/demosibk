@@ -1,0 +1,40 @@
+/* Mengubah Header Sidebar (Tenant Menu) menjadi Kartu Modern */
+.fi-sidebar-header {
+    background-color: white;
+    margin: 12px 12px 0 12px; /* Memberi jarak dari tepi */
+    border-radius: 12px; /* Sudut membulat */
+    padding: 0.5rem;
+    
+    /* Efek Shadow Halus */
+    box-shadow: 
+        0 4px 6px -1px rgb(0 0 0 / 0.05), 
+        0 2px 4px -2px rgb(0 0 0 / 0.05);
+    
+    /* Border tipis */
+    border: 1px solid rgba(229, 231, 235, 1);
+}
+
+/* Penyesuaian untuk Dark Mode */
+.dark .fi-sidebar-header {
+    background-color: rgba(255, 255, 255, 0.05); /* Transparan putih */
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+/* Mempercantik tombol Tenant di dalamnya */
+.fi-sidebar-header .fi-tenant-menu-trigger {
+    border-radius: 8px;
+}
+
+.fi-sidebar-header .fi-tenant-menu-trigger:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.dark .fi-sidebar-header .fi-tenant-menu-trigger:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Menambahkan sedikit jarak antara Header Card dan Navigasi */
+.fi-sidebar-nav {
+    margin-top: 1rem;
+}
